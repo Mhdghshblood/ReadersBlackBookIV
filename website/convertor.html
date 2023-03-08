@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Caesar Password Converter</title>
+    <link rel="stylesheet" type="text/css" href=".\suck.css">
+  </head>
+  <body>
+    <div class="main">
+      <h1>Caesar Password Converter</h1>
+      <label for="plaintext">Plaintext message:</label>
+      <input type="text" id="plaintext" name="plaintext"><br>
+      <label for="shift">Shift number(1~26):</label>
+      <input type="number" id="shift" name="shift" min="1" max="26" value="1"><br>
+      <button onclick="encode()">Encode</button>
+      <button onclick="decode()">Decode</button>
+      <br>
+      <label for="result">Result:</label>
+      <textarea id="result" name="result" readonly></textarea>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
